@@ -1,0 +1,91 @@
+/*
+  Localizable.strings (简体中文)
+  CleanMacForFlutters
+*/
+
+// MARK: - 侧边栏
+"sidebar.flutter_clean" = "Flutter 清理";
+"sidebar.xcode_clean" = "Xcode 清理";
+"sidebar.auto_detect" = "自动检测";
+
+// MARK: - 统计信息
+"stats.total_projects" = "项目总数";
+"stats.activated" = "已激活";
+"stats.deactivated" = "未激活";
+
+// MARK: - 首页 / Flutter 清理
+"home.title" = "Clean Mac for Flutter";
+"home.select_folders" = "选择文件夹";
+"home.select_folders_message" = "选择要添加的 Flutter 项目文件夹。";
+"home.empty_folders_message" = "尚未添加任何项目。\n使用「选择文件夹」或「扫描目录」开始添加。";
+"home.run_clean" = "清理";
+"home.clean_build_index" = "清理构建缓存";
+"home.github" = "GitHub";
+"home.support" = "支持";
+
+// MARK: - 工具栏
+"toolbar.select_all" = "全选";
+"toolbar.deselect_all" = "取消全选";
+
+// MARK: - Xcode 清理
+"xcode.title" = "Xcode 构建缓存";
+"xcode.description" = "清理 DerivedData 和 Index 以释放磁盘空间。\n这些数据会在你下次构建项目时自动重新生成。";
+"xcode.folder_configured" = "Xcode 文件夹已配置";
+"xcode.change_folder" = "更改 Xcode 文件夹";
+
+// MARK: - 完全磁盘访问权限
+"fda.required_title" = "需要完全磁盘访问权限";
+"fda.required_description" = "为了正常工作并清理项目文件夹，请在系统设置中授予完全磁盘访问权限。";
+"fda.open_settings" = "打开隐私设置";
+"fda.try_again" = "重试";
+"fda.checking_permissions" = "正在检查权限…";
+"fda.instructions" = "路径：系统设置 > 隐私与安全性 > 完全磁盘访问权限\n将本应用添加到列表并启用。";
+
+// MARK: - 命令执行
+"commands.executing" = "正在执行…";
+"commands.processing_folder" = "正在处理：%@";
+
+// MARK: - 弹窗
+"alert.error" = "错误";
+"alert.success" = "成功";
+"alert.ok" = "好的";
+
+// MARK: - 清理结果
+"clean.no.activated" = "没有已激活的文件夹可清理。";
+"clean.completed.title" = "清理完成！";
+"clean.completed.summary" = "已删除文件夹：%d 个";
+"clean.completed.space" = "已释放空间：%@";
+"clean.completed.warnings" = "警告：%d 个";
+"clean.none.deleted.errors" = "未删除任何文件夹，但发生了 %d 个错误。";
+"clean.nothing.found" = "未找到需要清理的文件夹。";
+
+// MARK: - Xcode 构建缓存清理
+"build.index.processing" = "正在清理 DerivedData 和 Index…";
+"build.index.completed.title" = "构建数据和索引已移除！";
+"build.index.nothing.found" = "未找到构建数据或索引。";
+"build.index.select.confirm" = "确认";
+"build.index.select.message" = "选择 Xcode 文件夹以清理 DerivedData 和 Index。\n默认路径：~/Library/Developer/Xcode";
+"build.index.confirm.title" = "确认清理";
+"build.index.confirm.message" = "是否删除 Xcode 构建数据和项目索引？\n\n将释放空间：%@";
+"build.index.confirm.delete" = "删除";
+"build.index.confirm.cancel" = "取消";
+
+// MARK: - 扫描目录
+"home.scan_directory" = "扫描目录";
+"scan.select.confirm" = "扫描";
+"scan.select.message" = "选择一个目录来扫描 Flutter 项目。\n所有包含 pubspec.yaml 的子目录都会被添加。";
+"scan.in_progress" = "正在扫描 Flutter 项目…";
+"scan.found_count" = "已发现 %d 个项目";
+"scan.completed" = "扫描完成！发现 %d 个 Flutter 项目。";
+"scan.nothing.found" = "在所选目录中未找到 Flutter 项目。";
+
+// MARK: - 文件监控
+"watch.page_title" = "自动检测";
+"watch.page_description" = "监控目录中的新 Flutter 项目。\n当监控目录中有新项目创建时，会自动添加到你的项目列表中。";
+"watch.section_header" = "监控目录";
+"watch.enable" = "自动检测 Flutter 项目";
+"watch.add_directory" = "添加监控目录";
+"watch.empty_message" = "暂无监控目录。\n添加一个目录以开始自动检测 Flutter 项目。";
+"watch.select.confirm" = "监控";
+"watch.select.message" = "选择一个要监控的目录。\n在此目录中新建的 Flutter 项目将被自动添加。";
+"watch.new_projects_found" = "检测到 %d 个新 Flutter 项目并已添加。";

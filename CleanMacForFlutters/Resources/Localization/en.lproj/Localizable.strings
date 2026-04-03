@@ -1,45 +1,61 @@
-/* 
+/*
   Localizable.strings (English)
   CleanMacForFlutters
 */
 
-// MARK: - Home View
+// MARK: - Sidebar
+"sidebar.flutter_clean" = "Flutter Clean";
+"sidebar.xcode_clean" = "Xcode Clean";
+"sidebar.auto_detect" = "Auto Detect";
+
+// MARK: - Stats
+"stats.total_projects" = "Total Projects";
+"stats.activated" = "Activated";
+"stats.deactivated" = "Deactivated";
+
+// MARK: - Home / Flutter Clean
 "home.title" = "Clean Mac for Flutter";
-"home.select_folders" = "Select folders";
-"home.empty_folders_message" = "Select one or more folders to display.";
-"home.run_clean" = "Run clean";
-"home.clean_build_index" = "Clean build & index";
-"home.github" = "Github";
+"home.select_folders" = "Select Folders";
+"home.select_folders_message" = "Choose Flutter project folders to add.";
+"home.empty_folders_message" = "No projects added yet.\nUse \"Select Folders\" or \"Scan Directory\" to get started.";
+"home.run_clean" = "Clean";
+"home.clean_build_index" = "Clean Build & Index";
+"home.github" = "GitHub";
 "home.support" = "Support";
+
+// MARK: - Toolbar
+"toolbar.select_all" = "Select All";
+"toolbar.deselect_all" = "Deselect All";
+
+// MARK: - Xcode Clean
+"xcode.title" = "Xcode Build Cache";
+"xcode.description" = "Clean DerivedData and Index to free up disk space.\nThese will be regenerated automatically when you build your projects.";
+"xcode.folder_configured" = "Xcode folder configured";
+"xcode.change_folder" = "Change Xcode Folder";
 
 // MARK: - Full Disk Access
 "fda.required_title" = "Full Disk Access Required";
 "fda.required_description" = "For the app to work correctly and be able to clean project folders, grant Full Disk Access in System Settings.";
 "fda.open_settings" = "Open Privacy Settings";
-"fda.try_again" = "Try again";
-"fda.checking_permissions" = "Checking permissions…";
+"fda.try_again" = "Try Again";
+"fda.checking_permissions" = "Checking permissions...";
 "fda.instructions" = "Path: System Settings > Privacy & Security > Full Disk Access\nAdd your app to the list and mark it as active.";
 
 // MARK: - Commands
-"commands.executing" = "Executing commands...";
+"commands.executing" = "Executing...";
 "commands.processing_folder" = "Processing: %@";
-"clean.no.activated" = "No folders to clean";
 
 // MARK: - Alerts
 "alert.error" = "Error";
 "alert.success" = "Success";
 "alert.ok" = "OK";
 
-// MARK: - Icons/Labels
-"icon.folder" = "folder";
-"icon.lock" = "lock";
-
-// MARK: - Clean Commands
-"clean.no.activated" = "No activated folders to clean";
+// MARK: - Clean Results
+"clean.no.activated" = "No activated folders to clean.";
 "clean.completed.title" = "Cleaning completed!";
-"clean.completed.summary" = "✅ Folders deleted: %d";
-"clean.completed.space" = "💾 Space freed: %@";
-"clean.completed.warnings" = "⚠️ Warnings: %d";
+"clean.completed.summary" = "Folders deleted: %d";
+"clean.completed.space" = "Space freed: %@";
+"clean.completed.warnings" = "Warnings: %d";
 "clean.none.deleted.errors" = "No folders were deleted, but %d errors occurred.";
 "clean.nothing.found" = "No folders to clean were found.";
 
@@ -49,7 +65,27 @@
 "build.index.nothing.found" = "No build data or index found.";
 "build.index.select.confirm" = "Confirm";
 "build.index.select.message" = "Select the Xcode folder to clean DerivedData and Index.\nDefault path: ~/Library/Developer/Xcode";
-"build.index.confirm.title" = "Confirm cleanup";
-"build.index.confirm.message" = "Do you want to delete Xcode build data and project index?\n\nSpace to be freed: %@";
+"build.index.confirm.title" = "Confirm Cleanup";
+"build.index.confirm.message" = "Delete Xcode build data and project index?\n\nSpace to be freed: %@";
 "build.index.confirm.delete" = "Delete";
 "build.index.confirm.cancel" = "Cancel";
+
+// MARK: - Scan Directory
+"home.scan_directory" = "Scan Directory";
+"scan.select.confirm" = "Scan";
+"scan.select.message" = "Select a directory to scan for Flutter projects.\nAll subdirectories containing pubspec.yaml will be added.";
+"scan.in_progress" = "Scanning for Flutter projects...";
+"scan.found_count" = "Found %d projects so far";
+"scan.completed" = "Scan complete! Found %d Flutter projects.";
+"scan.nothing.found" = "No Flutter projects found in the selected directory.";
+
+// MARK: - File Watching
+"watch.page_title" = "Auto Detection";
+"watch.page_description" = "Monitor directories for new Flutter projects.\nWhen a new project is created inside a monitored directory, it will be automatically added to your list.";
+"watch.section_header" = "Monitored Directories";
+"watch.enable" = "Auto-detect Flutter projects";
+"watch.add_directory" = "Add Monitored Directory";
+"watch.empty_message" = "No monitored directories.\nAdd a directory to start auto-detecting Flutter projects.";
+"watch.select.confirm" = "Monitor";
+"watch.select.message" = "Select a directory to monitor.\nNew Flutter projects created inside will be automatically added.";
+"watch.new_projects_found" = "%d new Flutter projects detected and added.";

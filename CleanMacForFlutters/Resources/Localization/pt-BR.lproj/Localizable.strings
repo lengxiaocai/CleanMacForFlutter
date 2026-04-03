@@ -1,45 +1,61 @@
-/* 
-  Localizable.strings (Português)
+/*
+  Localizable.strings (Português Brasileiro)
   CleanMacForFlutters
 */
 
-// MARK: - Home View
+// MARK: - Sidebar
+"sidebar.flutter_clean" = "Limpar Flutter";
+"sidebar.xcode_clean" = "Limpar Xcode";
+"sidebar.auto_detect" = "Detecção Auto";
+
+// MARK: - Stats
+"stats.total_projects" = "Total de Projetos";
+"stats.activated" = "Ativados";
+"stats.deactivated" = "Desativados";
+
+// MARK: - Home / Flutter Clean
 "home.title" = "Clean Mac for Flutter";
-"home.select_folders" = "Selecionar pastas";
-"home.empty_folders_message" = "Selecione uma ou mais pastas para exibir.";
-"home.run_clean" = "Run clean";
-"home.clean_build_index" = "Limpar compilação e índice";
-"home.github" = "Github";
+"home.select_folders" = "Selecionar Pastas";
+"home.select_folders_message" = "Escolha as pastas de projetos Flutter para adicionar.";
+"home.empty_folders_message" = "Nenhum projeto adicionado.\nUse \"Selecionar Pastas\" ou \"Escanear Diretório\" para começar.";
+"home.run_clean" = "Limpar";
+"home.clean_build_index" = "Limpar Compilação e Índice";
+"home.github" = "GitHub";
 "home.support" = "Apoiar";
 
+// MARK: - Toolbar
+"toolbar.select_all" = "Selecionar Todos";
+"toolbar.deselect_all" = "Desmarcar Todos";
+
+// MARK: - Xcode Clean
+"xcode.title" = "Cache de Compilação Xcode";
+"xcode.description" = "Limpe DerivedData e Index para liberar espaço em disco.\nEsses dados serão regenerados automaticamente ao compilar seus projetos.";
+"xcode.folder_configured" = "Pasta Xcode configurada";
+"xcode.change_folder" = "Alterar Pasta Xcode";
+
 // MARK: - Full Disk Access
-"fda.required_title" = "Acesso total ao disco necessário";
-"fda.required_description" = "Para que o app funcione corretamente e consiga limpar as pastas dos projetos, conceda Acesso total ao disco nas Configurações do sistema.";
+"fda.required_title" = "Acesso Total ao Disco Necessário";
+"fda.required_description" = "Para que o app funcione corretamente e consiga limpar as pastas dos projetos, conceda Acesso Total ao Disco nas Configurações do Sistema.";
 "fda.open_settings" = "Abrir Configurações de Privacidade";
-"fda.try_again" = "Tentar novamente";
-"fda.checking_permissions" = "Verificando permissões…";
-"fda.instructions" = "Caminho: Ajustes do sistema > Privacidade e Segurança > Acesso total ao disco\nAdicione seu app à lista e marque como ativo.";
+"fda.try_again" = "Tentar Novamente";
+"fda.checking_permissions" = "Verificando permissões...";
+"fda.instructions" = "Caminho: Ajustes do Sistema > Privacidade e Segurança > Acesso Total ao Disco\nAdicione seu app à lista e marque como ativo.";
 
 // MARK: - Commands
-"commands.executing" = "Executando comandos...";
+"commands.executing" = "Executando...";
 "commands.processing_folder" = "Processando: %@";
-"clean.no.activated" = "Sem pasta para limpar";
 
 // MARK: - Alerts
 "alert.error" = "Erro";
 "alert.success" = "Sucesso";
 "alert.ok" = "OK";
 
-// MARK: - Icons/Labels
-"icon.folder" = "pasta";
-"icon.lock" = "bloqueio";
-
-// MARK: - Clean Commands
-"clean.no.activated" = "Nenhuma pasta ativada para limpar";
+// MARK: - Clean Results
+"clean.no.activated" = "Nenhuma pasta ativada para limpar.";
 "clean.completed.title" = "Limpeza concluída!";
-"clean.completed.summary" = "✅ Pastas deletadas: %d";
-"clean.completed.space" = "💾 Espaço liberado: %@";
-"clean.completed.warnings" = "⚠️ Avisos: %d";
+"clean.completed.summary" = "Pastas deletadas: %d";
+"clean.completed.space" = "Espaço liberado: %@";
+"clean.completed.warnings" = "Avisos: %d";
 "clean.none.deleted.errors" = "Nenhuma pasta foi deletada, mas ocorreram %d erros.";
 "clean.nothing.found" = "Nenhuma pasta para limpar foi encontrada.";
 
@@ -49,7 +65,27 @@
 "build.index.nothing.found" = "Nenhum dado de compilação ou índice encontrado.";
 "build.index.select.confirm" = "Confirmar";
 "build.index.select.message" = "Selecione a pasta Xcode para limpar DerivedData e Index.\nCaminho padrão: ~/Library/Developer/Xcode";
-"build.index.confirm.title" = "Confirmar limpeza";
+"build.index.confirm.title" = "Confirmar Limpeza";
 "build.index.confirm.message" = "Deseja apagar os dados de compilação e índice do Xcode?\n\nEspaço a ser liberado: %@";
 "build.index.confirm.delete" = "Apagar";
 "build.index.confirm.cancel" = "Cancelar";
+
+// MARK: - Scan Directory
+"home.scan_directory" = "Escanear Diretório";
+"scan.select.confirm" = "Escanear";
+"scan.select.message" = "Selecione um diretório para escanear projetos Flutter.\nTodas as subpastas contendo pubspec.yaml serão adicionadas.";
+"scan.in_progress" = "Escaneando projetos Flutter...";
+"scan.found_count" = "%d projetos encontrados até agora";
+"scan.completed" = "Escaneamento concluído! %d projetos Flutter encontrados.";
+"scan.nothing.found" = "Nenhum projeto Flutter encontrado no diretório selecionado.";
+
+// MARK: - File Watching
+"watch.page_title" = "Detecção Automática";
+"watch.page_description" = "Monitore diretórios para novos projetos Flutter.\nQuando um novo projeto for criado dentro de um diretório monitorado, ele será adicionado automaticamente à sua lista.";
+"watch.section_header" = "Diretórios Monitorados";
+"watch.enable" = "Detectar projetos Flutter automaticamente";
+"watch.add_directory" = "Adicionar Diretório Monitorado";
+"watch.empty_message" = "Nenhum diretório monitorado.\nAdicione um diretório para começar a detectar projetos Flutter.";
+"watch.select.confirm" = "Monitorar";
+"watch.select.message" = "Selecione um diretório para monitorar.\nNovos projetos Flutter criados dentro serão adicionados automaticamente.";
+"watch.new_projects_found" = "%d novos projetos Flutter detectados e adicionados.";

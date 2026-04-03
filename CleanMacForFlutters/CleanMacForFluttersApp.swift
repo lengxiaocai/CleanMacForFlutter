@@ -2,7 +2,7 @@
 //  CleanMacForFluttersApp.swift
 //  CleanMacForFlutters
 //
-//  Created by André  Lucas on 09/12/25.
+//  应用入口，使用 SwiftUI App 生命周期
 //
 
 import SwiftUI
@@ -15,5 +15,5 @@ struct CleanMacForFluttersApp: App {
             HomeView()
         }
     }
-    
+
 }
